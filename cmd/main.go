@@ -9,11 +9,12 @@ func main() {
 	myTodos := factoryToDo("any")
 	rendering := factoryList("plain")
 	myTodos.SetList(rendering)
-	muTodos.Add("Task1")
-	muTodos.Add("Task2")
-	muTodos.Add("Task3")
-	muTodos.Add("Task4")
-	muTodos.Add("Task5")
+	myTodos.Add("Task1")
+	myTodos.Add("Task2")
+	myTodos.Add("Task3")
+	myTodos.Add("Task4")
+	myTodos.Add("Task5")
+	myTodos.Print()
 }
 
 func factoryToDo(s string) todo.ToDo {
@@ -27,5 +28,5 @@ func factoryList(s string) list.List {
 	if s == "plain" {
 		return list.NewPlain()
 	}
-	return list.NewBullet("*")
+	return list.NewBullet('*')
 }
