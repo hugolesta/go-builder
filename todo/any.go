@@ -1,17 +1,17 @@
 package todo
 
-import "github.com/hugolesta/go-builder"
+import "github.com/hugolesta/go-builder/list"
 
-type Any stuct {
+type Any struct {
 	rendering list.List
-	todos []string
+	todos     []string
 }
 
-fun NewAny() *Any {
+func NewAny() *Any {
 	return &Any{}
 }
 
-func (a *Any) SetList(l list.List){
+func (a *Any) SetList(l list.List) {
 	a.rendering = l
 }
 

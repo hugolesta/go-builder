@@ -1,6 +1,6 @@
 package todo
 
-import "container/list"
+import "github.com/hugolesta/go-builder/list"
 
 type Unique struct {
 	rendering list.List

@@ -1,9 +1,7 @@
 package todo
 
 import (
-	"container/list"
-
-	_ "github.com/hugolesta/go-builder"
+	"github.com/hugolesta/go-builder/list"
 )
 
 type ToDo interface {
